@@ -1,0 +1,577 @@
+2019-06-28 16:13:55.257+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2019-06-28 16:13:55.328+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2019-06-28 16:13:55.333+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-06-28 16:13:55.333+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2019-06-28 16:13:55.337+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-06-28 16:13:55.337+0000 INFO  [o.n.k.i.DiagnosticsManager] edition=Community
+2019-06-28 16:13:55.337+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.enabled=false
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webadmin.rrdb.location=data/rrd
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_certificate_file=conf/ssl/snakeoil.cert
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.keystore.location=data/keystore
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.querylog.filename=data/log/queries.log
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_key_file=conf/ssl/snakeoil.key
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.database.location=C:/Users/jah16sy/Desktop/github/Legal KMS/REPO/legal_mining/databases/database.db
+2019-06-28 16:13:55.338+0000 INFO  [o.n.k.i.DiagnosticsManager] remote_shell_enabled=true
+2019-06-28 16:13:55.339+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.port=7473
+2019-06-28 16:13:55.339+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.port=7474
+2019-06-28 16:13:55.339+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.enabled=true
+2019-06-28 16:13:55.339+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2019-06-28 16:13:55.340+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2019-06-28 16:13:55.344+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 15,67 GB
+2019-06-28 16:13:55.344+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 9,62 GB
+2019-06-28 16:13:55.344+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 347,25 MB
+2019-06-28 16:13:55.344+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 31,67 GB
+2019-06-28 16:13:55.345+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 23,18 GB
+2019-06-28 16:13:55.345+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2019-06-28 16:13:55.345+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 179,25 MB
+2019-06-28 16:13:55.345+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 252,00 MB
+2019-06-28 16:13:55.345+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 3,92 GB
+2019-06-28 16:13:55.347+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-06-28 16:13:55.347+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-06-28 16:13:55.347+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=3,56 MB, used=3,55 MB, max=240,00 MB, threshold=0,00 B
+2019-06-28 16:13:55.348+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=12,50 MB, used=12,22 MB, max=-1,00 B, threshold=0,00 B
+2019-06-28 16:13:55.348+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=1,75 MB, used=1,65 MB, max=1,00 GB, threshold=0,00 B
+2019-06-28 16:13:55.348+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=105,00 MB, used=58,00 MB, max=-1,00 B, threshold=?
+2019-06-28 16:13:55.349+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=2,00 MB, used=2,00 MB, max=-1,00 B, threshold=?
+2019-06-28 16:13:55.350+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=145,00 MB, used=10,75 MB, max=3,92 GB, threshold=0,00 B
+2019-06-28 16:13:55.350+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2019-06-28 16:13:55.350+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2019-06-28 16:13:55.358+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 5620@jah16sy-PC
+2019-06-28 16:13:55.358+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-06-28 16:13:55.358+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Europe/Berlin
+2019-06-28 16:13:55.358+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2019-06-28 16:13:55.359+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-06-28 16:13:55.359+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-06-28 16:13:55.359+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.151-b12
+2019-06-28 16:13:55.359+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-06-28 16:13:55.360+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=zip]
+2019-06-28 16:13:55.360+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-webapp-9.2.9.v20150224.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-http-9.2.9.v20150224.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-xml-9.2.9.v20150224.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-server-2.3.12.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-security-9.2.9.v20150224.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/server-api-2.3.12.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-reflect-2.11.7.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar
+2019-06-28 16:13:55.366+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-import-tool-2.3.12.jar
+2019-06-28 16:13:55.371+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/asm-5.0.2.jar
+2019-06-28 16:13:55.371+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/commons-lang3-3.3.2.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/jaccess.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-jmx-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-consistency-check-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-server-1.19.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-util-9.2.9.v20150224.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-mapper-asl-1.9.13.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/lucene-core-3.6.2.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-jaxrs-1.9.13.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-logging-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-library-2.11.7.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunpkcs11.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-primitive-collections-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/zipfs.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\sunrsasign.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-core-1.19.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-browser-2.3.11.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/slf4j-api-1.7.6.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-lucene-index-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/cldrdata.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/javax.servlet-api-3.1.0.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunec.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-digester-2.1.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-2.3.12.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/bcprov-jdk15on-1.52.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/nashorn.jar
+2019-06-28 16:13:55.374+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/mimepull-1.9.3.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-configuration-1.10.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-io-2.3.12.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/parboiled-scala_2.11-1.1.7.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-access-1.1.2.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-csv-2.3.12.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/conf/
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-multipart-1.19.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-servlet-9.2.9.v20150224.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-function-2.3.12.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-classic-1.1.2.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\classes
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-server-2.3.12-static-web.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-server-9.2.9.v20150224.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/opencsv-2.3.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-io-2.4.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-servlet-1.19.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-logging-1.1.1.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-core-1.1.2.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-graph-algo-2.3.12.jar
+2019-06-28 16:13:55.375+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/dnsns.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/jfxrt.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-consistency-check-legacy-2.3.12.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-lang-2.6.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-io-9.2.9.v20150224.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/rhino-1.7R4.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-2.2_2.11-2.2.10.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-graph-matching-2.3.12.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/access-bridge-64.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-parser-combinators_2.11-1.0.4.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunmscapi.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-udc-2.3.12.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/localedata.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/bcpkix-jdk15on-1.52.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/netty-all-4.0.28.Final.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-codegen-2.3.12.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/jline-2.12.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/parboiled-core-1.1.7.jar
+2019-06-28 16:13:55.376+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-unsafe-2.3.12.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-shell-2.3.12.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jsr311-api-1.1.2.r612.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-core-asl-1.9.13.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-kernel-2.3.12.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-beanutils-1.8.3.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/rrd4j-2.2.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunjce_provider.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_151\bin
+2019-06-28 16:13:55.377+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\Sun\Java\bin
+2019-06-28 16:13:55.379+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2019-06-28 16:13:55.379+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2019-06-28 16:13:55.380+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\gurobi702\win64\bin
+2019-06-28 16:13:55.380+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python27
+2019-06-28 16:13:55.380+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python27\Scripts
+2019-06-28 16:13:55.380+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2019-06-28 16:13:55.381+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2019-06-28 16:13:55.381+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2019-06-28 16:13:55.381+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2019-06-28 16:13:55.381+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2019-06-28 16:13:55.382+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2019-06-28 16:13:55.383+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-06-28 16:13:55.383+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2019-06-28 16:13:55.385+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2019-06-28 16:13:55.385+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2019-06-28 16:13:55.386+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2019-06-28 16:13:55.386+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2019-06-28 16:13:55.386+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\novell\GroupWise
+2019-06-28 16:13:55.386+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\120\DTS\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Live\Shared
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\scala\bin
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\110\DTS\Binn
+2019-06-28 16:13:55.387+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Skype\Phone
+2019-06-28 16:13:55.391+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Graphviz2.38\bin
+2019-06-28 16:13:55.391+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Calibre2
+2019-06-28 16:13:55.391+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\OpenSSH
+2019-06-28 16:13:55.392+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\config\systemprofile\.dnx\bin
+2019-06-28 16:13:55.392+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft DNX\Dnvm
+2019-06-28 16:13:55.392+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
+2019-06-28 16:13:55.392+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\WiFi\bin
+2019-06-28 16:13:55.392+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Common Files\Intel\WirelessCommon
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35_64bit\Scripts
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35_64bit
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35\Scripts
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\WiFi\bin
+2019-06-28 16:13:55.393+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Common Files\Intel\WirelessCommon
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\AppData\Local\Microsoft\WindowsApps
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\AppData\Local\GitHubDesktop\bin
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\Downloads\neo4j-community-2.3.12-windows\neo4j-community-2.3.12
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\Downloads\neo4j-community-2.3.12-windows\neo4j-community-2.3.12
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = C:\Program Files\Java\jre1.8.0_151\bin
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.properties = conf/neo4j-server.properties
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = DE
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Users\jah16sy\DOWNLO~1\NEO4J-~1.12-\NEO4J-~1.12
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.ext.udc.source = zip
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\jah16sy
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Europe/Berlin
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1252
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = jah16sy
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityBootstrapper
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = de
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2019-06-28 16:13:55.394+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-06-28 16:13:55.397+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2019-06-28 16:13:55.397+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2019-06-28 16:13:55.397+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2019-06-28 16:13:55.397+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2019-06-28 16:13:55.512+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2019-06-28 16:13:55.512+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2019-06-28 16:13:55.512+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-06-28 16:13:55.512+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2019-06-28 16:13:55.512+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Adapter:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hosted Network Virtual Adapter:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:4584:59f0:c75e:4621%eth2
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft IP-HTTPS Platform Adapter:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter:
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth-Gerät (PAN):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2019-06-28 16:13:55.513+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:7050:4fb4:3a19:f903%wlan2
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:1905:e4a5:3934:f590%wlan3
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter #3:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.0.13
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:10f0:8392:bd77:1e14%wlan5
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter #2:
+2019-06-28 16:13:55.514+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-Virtual WiFi Filter Driver-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-Native WiFi Filter Driver-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:13:55.515+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-06-28 16:13:55.789+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-06-28 16:13:55.789+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2019-06-28 16:13:55.790+0000 INFO  [o.n.k.i.f.GraphDatabaseFacade] Shutdown started
+2019-06-28 16:17:22.740+0000 INFO  [o.n.k.i.f.CommunityFacadeFactory] No locking implementation specified, defaulting to 'community'
+2019-06-28 16:17:22.803+0000 INFO  [o.n.k.AvailabilityGuard] Requirement makes database unavailable: Database available
+2019-06-28 16:17:22.806+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-06-28 16:17:22.806+0000 INFO  [o.n.k.i.DiagnosticsManager] Neo4j Kernel properties:
+2019-06-28 16:17:22.811+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-06-28 16:17:22.811+0000 INFO  [o.n.k.i.DiagnosticsManager] edition=Community
+2019-06-28 16:17:22.811+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.enabled=false
+2019-06-28 16:17:22.811+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webadmin.rrdb.location=data/rrd
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_certificate_file=conf/ssl/snakeoil.cert
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] allow_store_upgrade=true
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.keystore.location=data/keystore
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.querylog.filename=data/log/queries.log
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] dbms.security.tls_key_file=conf/ssl/snakeoil.key
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.database.location=C:/Users/jah16sy/Desktop/github/Legal KMS/REPO/legal_mining/databases/database.db
+2019-06-28 16:17:22.812+0000 INFO  [o.n.k.i.DiagnosticsManager] remote_shell_enabled=true
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.port=7473
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.port=7474
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.webserver.https.enabled=true
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] Diagnostics providers:
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.kernel.info.DiagnosticsManager
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_MEMORY
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_MEMORY
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] OPERATING_SYSTEM
+2019-06-28 16:17:22.813+0000 INFO  [o.n.k.i.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-06-28 16:17:22.814+0000 INFO  [o.n.k.i.DiagnosticsManager] CLASSPATH
+2019-06-28 16:17:22.814+0000 INFO  [o.n.k.i.DiagnosticsManager] LIBRARY_PATH
+2019-06-28 16:17:22.814+0000 INFO  [o.n.k.i.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-06-28 16:17:22.814+0000 INFO  [o.n.k.i.DiagnosticsManager] NETWORK
+2019-06-28 16:17:22.814+0000 INFO  [o.n.k.i.DiagnosticsManager] System memory information:
+2019-06-28 16:17:22.816+0000 INFO  [o.n.k.i.DiagnosticsManager] Total Physical memory: 15,67 GB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Free Physical memory: 9,77 GB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Committed virtual memory: 348,57 MB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Total swap space: 31,67 GB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Free swap space: 23,21 GB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM memory information:
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Free  memory: 180,72 MB
+2019-06-28 16:17:22.817+0000 INFO  [o.n.k.i.DiagnosticsManager] Total memory: 252,00 MB
+2019-06-28 16:17:22.818+0000 INFO  [o.n.k.i.DiagnosticsManager] Max   memory: 3,92 GB
+2019-06-28 16:17:22.819+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-06-28 16:17:22.819+0000 INFO  [o.n.k.i.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-06-28 16:17:22.820+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=3,56 MB, used=3,51 MB, max=240,00 MB, threshold=0,00 B
+2019-06-28 16:17:22.821+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=12,50 MB, used=12,21 MB, max=-1,00 B, threshold=0,00 B
+2019-06-28 16:17:22.821+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=1,75 MB, used=1,65 MB, max=1,00 GB, threshold=0,00 B
+2019-06-28 16:17:22.821+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=64,00 MB, used=49,00 MB, max=-1,00 B, threshold=?
+2019-06-28 16:17:22.823+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=3,00 MB, used=3,00 MB, max=-1,00 B, threshold=?
+2019-06-28 16:17:22.823+0000 INFO  [o.n.k.i.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=185,00 MB, used=18,28 MB, max=3,92 GB, threshold=0,00 B
+2019-06-28 16:17:22.823+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating system information:
+2019-06-28 16:17:22.824+0000 INFO  [o.n.k.i.DiagnosticsManager] Operating System: Windows 10; version: 10.0; arch: amd64; cpus: 4
+2019-06-28 16:17:22.830+0000 INFO  [o.n.k.i.DiagnosticsManager] Process id: 11956@jah16sy-PC
+2019-06-28 16:17:22.830+0000 INFO  [o.n.k.i.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-06-28 16:17:22.830+0000 INFO  [o.n.k.i.DiagnosticsManager] Local timezone: Europe/Berlin
+2019-06-28 16:17:22.830+0000 INFO  [o.n.k.i.DiagnosticsManager] JVM information:
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Version: 25.151-b12
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] VM Arguments: [-Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Dlog4j.configuration=file:conf/log4j.properties, -XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=zip]
+2019-06-28 16:17:22.831+0000 INFO  [o.n.k.i.DiagnosticsManager] Java classpath:
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-webapp-9.2.9.v20150224.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-http-9.2.9.v20150224.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-xml-9.2.9.v20150224.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-server-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-security-9.2.9.v20150224.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/server-api-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-reflect-2.11.7.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-1.9_2.11-2.0.5.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-import-tool-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/asm-5.0.2.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/commons-lang3-3.3.2.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/jaccess.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-jmx-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-consistency-check-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-server-1.19.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-util-9.2.9.v20150224.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-mapper-asl-1.9.13.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/lucene-core-3.6.2.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-jaxrs-1.9.13.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-logging-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-library-2.11.7.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunpkcs11.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-primitive-collections-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/zipfs.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\sunrsasign.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-core-1.19.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-browser-2.3.11.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/slf4j-api-1.7.6.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-lucene-index-2.3.12.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/cldrdata.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/javax.servlet-api-3.1.0.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+2019-06-28 16:17:22.940+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunec.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-digester-2.1.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-2.3.12.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/bcprov-jdk15on-1.52.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/nashorn.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/mimepull-1.9.3.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-configuration-1.10.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-io-2.3.12.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/parboiled-scala_2.11-1.1.7.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-access-1.1.2.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-csv-2.3.12.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/conf/
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-multipart-1.19.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-servlet-9.2.9.v20150224.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-function-2.3.12.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-classic-1.1.2.jar
+2019-06-28 16:17:22.943+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\classes
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/neo4j-server-2.3.12-static-web.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-server-9.2.9.v20150224.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/opencsv-2.3.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-io-2.4.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jersey-servlet-1.19.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-logging-1.1.1.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/logback-core-1.1.2.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-graph-algo-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/dnsns.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/jfxrt.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-consistency-check-legacy-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-lang-2.6.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jetty-io-9.2.9.v20150224.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/rhino-1.7R4.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-compiler-2.2_2.11-2.2.10.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-graph-matching-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/access-bridge-64.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [bootstrap] C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/scala-parser-combinators_2.11-1.0.4.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunmscapi.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-udc-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/localedata.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/bcpkix-jdk15on-1.52.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/netty-all-4.0.28.Final.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-codegen-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/jline-2.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/parboiled-core-1.1.7.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-unsafe-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-shell-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jsr311-api-1.1.2.r612.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/jackson-core-asl-1.9.13.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-kernel-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/commons-beanutils-1.8.3.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/system/lib/rrd4j-2.2.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [loader.1] file:/C:/Program%20Files/Java/jre1.8.0_151/lib/ext/sunjce_provider.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager]  [classpath + loader.0] file:/C:/Users/jah16sy/Downloads/neo4j-community-2.3.12-windows/neo4j-community-2.3.12/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager] Library path:
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Java\jre1.8.0_151\bin
+2019-06-28 16:17:22.944+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\Sun\Java\bin
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\gurobi702\win64\bin
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python27
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python27\Scripts
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\ProgramData\Oracle\Java\javapath
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\iCLS Client
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\iCLS Client
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32
+2019-06-28 16:17:22.948+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows
+2019-06-28 16:17:22.951+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\wbem
+2019-06-28 16:17:22.951+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\WindowsPowerShell\v1.0
+2019-06-28 16:17:22.952+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+2019-06-28 16:17:22.953+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+2019-06-28 16:17:22.953+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Git\cmd
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\novell\GroupWise
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\120\Tools\Binn
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn
+2019-06-28 16:17:22.954+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn
+2019-06-28 16:17:22.956+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\120\DTS\Binn
+2019-06-28 16:17:22.956+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn
+2019-06-28 16:17:22.957+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Live\Shared
+2019-06-28 16:17:22.957+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\scala\bin
+2019-06-28 16:17:22.957+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\110\Tools\Binn
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft SQL Server\110\DTS\Binn
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Skype\Phone
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Graphviz2.38\bin
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Calibre2
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\OpenSSH
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Windows\System32\config\systemprofile\.dnx\bin
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Microsoft DNX\Dnvm
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit
+2019-06-28 16:17:22.958+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\WiFi\bin
+2019-06-28 16:17:22.961+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Common Files\Intel\WirelessCommon
+2019-06-28 16:17:22.961+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35_64bit\Scripts
+2019-06-28 16:17:22.961+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35_64bit
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35\Scripts
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Python35
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Intel\WiFi\bin
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Program Files\Common Files\Intel\WirelessCommon
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\AppData\Local\Microsoft\WindowsApps
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\AppData\Local\GitHubDesktop\bin
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\Downloads\neo4j-community-2.3.12-windows\neo4j-community-2.3.12
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] C:\Users\jah16sy\Downloads\neo4j-community-2.3.12-windows\neo4j-community-2.3.12
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] System.properties:
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.boot.library.path = C:\Program Files\Java\jre1.8.0_151\bin
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] org.neo4j.server.properties = conf/neo4j-server.properties
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] path.separator = ;
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.country = DE
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.script = 
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.os.patch.level = 
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.dir = C:\Users\jah16sy\DOWNLO~1\NEO4J-~1.12-\NEO4J-~1.12
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] neo4j.ext.udc.source = zip
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.variant = 
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] log4j.configuration = file:conf/log4j.properties
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.jnu.encoding = Cp1252
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.home = C:\Users\jah16sy
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.timezone = Europe/Berlin
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] file.encoding = Cp1252
+2019-06-28 16:17:22.962+0000 INFO  [o.n.k.i.DiagnosticsManager] user.name = jah16sy
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityBootstrapper
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.arch.data.model = 64
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] user.language = de
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] awt.toolkit = sun.awt.windows.WToolkit
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] file.separator = \
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.io.unicode.encoding = UnicodeLittle
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.endian = little
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.desktop = windows
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] sun.cpu.isalist = amd64
+2019-06-28 16:17:22.964+0000 INFO  [o.n.k.i.DiagnosticsManager] Network information:
+2019-06-28 16:17:23.071+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Software Loopback Interface 1:
+2019-06-28 16:17:23.071+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 127.0.0.1
+2019-06-28 16:17:23.071+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-06-28 16:17:23.071+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPPOE):
+2019-06-28 16:17:23.071+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft 6to4 Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Kernel Debug Network Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Hosted Network Virtual Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:4584:59f0:c75e:4621%eth2
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft IP-HTTPS Platform Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Cisco AnyConnect Secure Mobility Client Virtual Miniport Adapter for Windows x64:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (SSTP):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Bluetooth-Gerät (PAN):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (L2TP):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IKEv2):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP):
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Teredo Tunneling Adapter:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2:
+2019-06-28 16:17:23.072+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:7050:4fb4:3a19:f903%wlan2
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:1905:e4a5:3934:f590%wlan3
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor):
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter #3:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (PPTP):
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: 192.168.0.13
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager]     address: fe80:0:0:0:10f0:8392:bd77:1e14%wlan5
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Virtual WiFi Miniport Adapter #2:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Ethernet Connection I219-LM #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.073+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-Virtual WiFi Filter Driver-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-Native WiFi Filter Driver-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Intel(R) Dual Band Wireless-AC 8260-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IP)-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.074+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (IPv6)-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP Native MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-Native WiFi Filter Driver-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-QoS Packet Scheduler-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] Interface Microsoft Wi-Fi Direct Virtual Adapter #2-WFP 802.3 MAC Layer LightWeight Filter-0000:
+2019-06-28 16:17:23.075+0000 INFO  [o.n.k.i.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-06-28 16:17:23.279+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-06-28 16:17:23.279+0000 INFO  [o.n.k.i.DiagnosticsManager] --- STOPPING diagnostics END ---
+2019-06-28 16:17:23.280+0000 INFO  [o.n.k.i.f.GraphDatabaseFacade] Shutdown started

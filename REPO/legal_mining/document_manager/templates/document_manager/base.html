@@ -1,0 +1,162 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+<link href="/static/css/bootstrap_flatly.css" rel="stylesheet">
+<link href="/static/css/custom.css" rel="stylesheet">
+
+
+<link href="/static/css/metisMenu.min.css" rel="stylesheet">
+<link href="/static/css/menu.css" rel="stylesheet">
+<link href="/static/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/metisMenu.min.js"></script>
+<script src="/static/js/menu.js"></script>
+
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+<div id="wrapper">
+
+
+
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Legal Knowledge Management System</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Notification</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>We recommend you to read 3 new documents that my be of interest to you ... </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Notification</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>03.02.2018</em>
+                                    </span>
+                                </div>
+                                <div>We recommend you to read 1 new documents that my be of interest to you ... </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                	<li>
+                            <a href="#">
+                                <div>
+                                    <strong>Notification</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>01.02.2018</em>
+                                    </span>
+                                </div>
+                                <div>We recommend you to read 14 new documents that my be of interest to you ... </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+               
+                
+              
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="/user_profile/"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="{% url "legal_mining_logout" %}" target="_blank"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+
+
+
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+
+			<div><i class="fa fa-user fa-fw"></i>Activ-User: {{ user.username }}</div>
+                        <div><i class="fa fa-lock fa-fw"></i>Permissions: Administration</div>  
+                        </li>
+                        <li>
+                            <a href="../"><i class="fa fa-search fa-fw"></i> Document Search</a>
+                        </li>
+			<li>
+                            <a href="/recommendations/"><i class="fa fa-star fa-fw"></i> Recommendations</a>
+                        </li>
+			<li>
+                            <a href="/crawler/"><i class="fa fa-dashboard fa-fw"></i> Crawler Configuration</a>
+                        </li>
+			<li>
+                            <a href="#"><i class="fa fa-server fa-fw"></i> Service Statistics</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+		<br>
+            {% block search %} {% endblock %}
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+

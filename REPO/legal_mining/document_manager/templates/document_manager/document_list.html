@@ -1,0 +1,12 @@
+{% load static %}
+<div>
+    <h1><a href="/">Welcome</a></h1>
+</div>
+
+{% for doc in docs %}
+    <div>
+        <p>published: {{ doc.date }}</p>
+        <h1><a href="">{{ doc.title }}</a></h1>
+        <p>{{ doc.url|linebreaksbr }}</p>
+    </div>
+{% endfor %}

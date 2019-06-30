@@ -1,0 +1,62 @@
+{% extends 'document_manager/base.html' %}
+
+{% block search %}
+<link href="/static/css/bootstrap_flatly.css" rel="stylesheet">
+<link href="/static/css/custom.css" rel="stylesheet">
+<link href="/static/css/bootstrap-table-expandable.css" rel="stylesheet">
+<script src="/static/js/bootstrap-table-expandable.js"></script>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">Legal Miner</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/recommendations/" target="_blank">Recommendations</a></li>
+          <li><a href="/user_profile/" target="_blank">Profile</a></li>
+          <li><a href="{% url "legal_mining_logout" %}" target="_blank">Logout</a></li>
+        </ul>
+
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="bs-docs-section">
+    <div class="row">
+      <div  class="page-header" style="margin-top: 100px;">
+
+        <h1 id="forms" style="float: left;">Paragraph-Search for</h1><a href="#" class="btn btn-warning" style="margin: 22px 0px 20px 20px;">{{ par.name}}</a>
+      </div>
+
+          
+          <h2>Documents connected:</h2>
+
+          <table class="table table-striped table-hover w-auto">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+              {% for doc in docs %}
+              <tr>
+                <td><a href="{{ doc.startdoc_object.generate_absolute_url }}">{{ doc.startdoc_object.title }}</a></td>
+              </tr>
+              {% endfor %}
+          </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

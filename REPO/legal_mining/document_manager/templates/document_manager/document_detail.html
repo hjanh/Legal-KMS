@@ -1,0 +1,207 @@
+{% extends 'document_manager/base.html' %}
+
+
+{% block search %}
+{% load vote %}
+{% load get_usernames %}
+<link href="/static/css/bootstrap_flatly.css" rel="stylesheet">
+<link href="/static/css/custom.css" rel="stylesheet">
+
+
+
+<div class="container" style="width:920px;">
+  <div class="bs-docs-section">
+    <div class="row">
+      
+      {% vote_exists documentstorage request.user 0 as vote_up %}
+      {% vote_exists documentstorage request.user 1 as vote_down %}
+
+        <h3 id="forms">{{ documentstorage.title }}</h3>
+     
+          {% if vote_up %}
+          <a href="#" class="btn btn-success upvote disabled" name="{{ documentstorage.hash }}">Like</a>
+          <a href="#" class="btn btn-danger downvote" name="{{ documentstorage.hash }}">Dislike</a>
+          {% elif vote_down %}
+          <a href="#" class="btn btn-success upvote" name="{{ documentstorage.hash }}">Like</a>
+          <a href="#" class="btn btn-danger downvote disabled" name="{{ documentstorage.hash }}">Dislike</a>
+          {% else %}
+          <a href="#" class="btn btn-success upvote" name="{{ documentstorage.hash }}">Like</a>
+          <a href="#" class="btn btn-danger downvote" name="{{ documentstorage.hash }}">Dislike</a>
+          {% endif %}
+
+
+          <div class="alert alert-dismissible alert-success collapse" id="notification_up">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>You liked</strong> a document.
+          </div>
+
+          <div class="alert alert-dismissible alert-danger collapse" id="notification_down">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>You disliked</strong> a document.
+          </div>
+
+
+          <div class="resultsdiv" style="margin-top: 30px;">
+
+          <div>
+            <h4>Entitys</h4>
+            {% for ent in entities %}
+              <a href="{{ ent.generate_absolute_url }}" class="btn btn-primary btn-sm" style="margin: 7px;">{{ ent.text }}</a>
+            {% endfor %}
+
+
+          </div>
+
+            <table class="table table-striped table-hover ">
+              <thead>
+                <tr>
+                  <th>Attribute</th>
+                  <th>Content</th>
+                </tr>
+              </thead>
+
+              <tbody>
+              
+              <tr>
+                <td>Author:</td>
+                {% if not documentstorage.author %}
+                <td>None</td>
+                {% else %}
+                <td>{{ documentstorage.author }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                <td>Abstract:</td>
+                {% if not documentstorage.abstract or NULL %}
+                <td>None</td>
+                {% else %}
+                <td>{{ documentstorage.abstract }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                <td>Text:</td>
+                {% if not documentstorage.text %}
+                <td>None</td>
+                {% else %}
+                <td>{{ documentstorage.text }}</td>
+                {% endif %}
+              </tr>
+              <tr>
+                <td>Language:</td>
+                {% if not documentstorage.language %}
+                <td>None</td>
+                {% else %}
+                  {% ifequal documentstorage.language 1 %}
+                  <td>German</td>
+                  {% endifequal %}
+                  {% ifequal documentstorage.language 2 %}
+                  <td>English</td>
+                  {% endifequal %}
+                  {% ifequal documentstorage.language 3 %}
+                  <td>French</td>
+                  {% endifequal %}
+                  {% ifequal documentstorage.language 4 %}
+                  <td>Spanish</td>
+                  {% endifequal %}
+                {% endif %}
+              </tr>
+              <tr>
+                <td>Source:</td>
+                {% if not documentstorage.datasource %}
+                <td>None</td>
+                {% else %}
+                  {% ifequal documentstorage.datasource 1 %}
+                  <td>Bundesministerium der Finanzen</td>
+                  {% endifequal %}
+                  {% ifequal documentstorage.datasource 2 %}
+                  <td>OECD</td>
+                  {% endifequal %}
+                  {% ifequal documentstorage.datasource 3 %}
+                  <td>European Parliament</td>
+                  {% endifequal %}
+                {% endif %}
+                <tr>
+                <td>URL:</td>
+                {% if not documentstorage.url %}
+                <td>None</td>
+                {% else %}
+                <td><a href="{{ documentstorage.url }}">Click here</a></td>
+                {% endif %}
+              </tr>
+            </table>
+
+            {% if likes %}
+            <div class="resultsdiv" style="margin-bottom: 50px;">
+              <h3>Users who liked this</h3>
+              {% for user_id in likes %}
+                {% get_username_from_userid user_id.0 %}
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if views %}
+            <div class="resultsdiv" style="margin-bottom: 50px;">
+              <h3>Users who viewed this</h3>
+              <table class="table table-striped table-hover ">
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>View Date</th>
+                </tr>
+              </thead>
+
+              <tbody>
+              {% for view in views %}
+              <tr>
+                <td>{{ view.user_id }}</a></td>
+                <td>{{ view.view_date }}</td>
+              </tr>
+              {% endfor %}
+            </table>
+            {% endif %}
+          </div>
+      </div>
+    </div>
+
+<script>
+$('.upvote').click(function(){
+      THIS = $(this);
+      $.ajax({
+               type: "POST",
+               url: "{% url 'upvote' %}",
+               data: {'hash': $(this).attr('name'), 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+               dataType: "json",
+               success: function(response) {
+                      $('#notification_up').show();
+                      THIS.addClass("disabled");
+                      THIS.parent().children('a:nth-child(3)').removeClass("disabled");  
+                },
+                error: function(rs, e) {
+                       alert(rs.responseText);
+                       alert('ERROR');
+                }
+          });
+    })
+
+$('.downvote').click(function(){
+      THIS = $(this);
+      $.ajax({
+               type: "POST",
+               url: "{% url 'downvote' %}",
+               data: {'hash': $(this).attr('name'), 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+               dataType: "json",
+               success: function(response) {
+                      $('#notification_down').show();
+                      THIS.addClass("disabled");
+                      THIS.parent().children('a:nth-child(2)').removeClass("disabled");
+                },
+                error: function(rs, e) {
+                       alert(rs.responseText);
+                       alert('ERROR');
+                }
+          });
+    })
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,180 @@
+{% extends 'document_manager/base.html' %}
+
+{% block search %}
+<link href="/static/css/bootstrap_flatly.css" rel="stylesheet">
+<link href="/static/css/custom.css" rel="stylesheet">
+<link href="/static/css/bootstrap-table-expandable.css" rel="stylesheet">
+<script src="/static/js/bootstrap-table-expandable.js"></script>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="../" class="navbar-brand">Legal Miner</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="navbar-main">
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/recommendations/" target="_blank">Recommendations</a></li>
+          <li><a href="/user_profile/" target="_blank">Profile</a></li>
+          <li><a href="{% url "legal_mining_logout" %}" target="_blank">Logout</a></li>
+        </ul>
+
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="bs-docs-section">
+    <div class="row">
+      <div  class="page-header" style="margin-top: 100px;">
+
+        <h1 id="forms">Your Recommendations</h1>
+      </div>
+          
+          <h2>Recommendations over liked Documents Entity-Similarity</h2>
+
+          <table class="table table-striped table-hover table-expandable w-auto">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+              {% for rec in entity_scores %}
+              <tr data-toggle="collapse">
+                <td><a href="{{ rec.recdoc_object.generate_absolute_url }}" class="no-collapsable">{{ rec.recdoc_object.title }}</a></td>
+                <td><a href="#" class="btn btn-success upvote" style="width: 75px;" name="">{{ rec.score }}</a></td>
+              </tr>
+              <tr>
+              <td>
+                <table class="table table-striped table-hover table-bordered ">
+                <thead>
+                <tr>
+                  <th>From Document</th>
+                  <th>Connected Entities</th>
+                  <th>Liked By User</th>
+                </tr>
+              </thead>
+                <tr>
+                  <td style="width: 610px">
+                  <ul class="list-group">
+                    {% for sdoc in rec.startdoc_objects %}
+                    <li class="list-group-item"><a href="{{ sdoc.generate_absolute_url }}">{{ sdoc.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                  </td>
+                  <td style="width: 300px">
+                  {% for ent in rec.entity_objects %}
+                    <a href="{{ ent.generate_absolute_url }}" class="btn btn-primary btn-sm" style="margin: 7px;">{{ ent.text }}</a>
+                  {% endfor %}
+
+                  </td>
+                  <td>{{ rec.user_id }}</td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              {% endfor %}
+            </table>
+
+          <h2>Recommendations over connected Paragraphs</h2>
+          <table class="table table-striped table-hover table-expandable w-auto ">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Paragraph</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+              {% for rec in paragraph_connections %}
+              <tr data-toggle="collapse">
+                <td><a href="{{ rec.recdoc_object.generate_absolute_url }}">{{ rec.recdoc_object.title }}</a></td>
+                <td><a href="{{ rec.par_object.generate_absolute_url }}" class="btn btn-warning upvote no-collapsable" style="width: 130px;" name="">{{ rec.par }}</a></td>
+              </tr>
+              <tr>
+              <td>
+                <table class="table table-striped table-hover ">
+                <thead>
+                <tr>
+                  <th>From Document</th>
+              </thead>
+                <tr>
+                  <td>
+                  <ul>
+                    <li class="list-group-item"><a href="{{ rec.startdoc_object.generate_absolute_url }}">{{ rec.startdoc_object.title }}</a></li>
+                  </ul>
+                  </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              {% endfor %}
+            </table>
+
+            <h2>Recommendations over viewed Documents Entity-Similarity</h2>
+          <table class="table table-striped table-hover table-expandable w-auto">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+              {% for rec in view_scores %}
+              <tr data-toggle="collapse">
+                <td style="width: 1200px;"><a href="{{ rec.recdoc_object.generate_absolute_url }}" class="no-collapsable">{{ rec.recdoc_object.title }}</a></td>
+                <td><a href="#" class="btn btn-success upvote" style="width: 75px;" name="">{{ rec.score }}</a></td>
+              </tr>
+              <tr>
+              <td>
+                <table class="table table-striped table-hover ">
+                <thead>
+                <tr>
+                  <th>From Document</th>
+                  <th>Connected Entities</th>
+
+                </tr>
+              </thead>
+                <tr>
+                  <td style="width: 610px">
+                    <ul>
+                      <li class="list-group-item"><a href="{{ rec.startdoc_object.generate_absolute_url }}">{{ rec.startdoc_object.title }}</a></li>
+                    </ul>
+                  </td>
+                  <td>
+                  {% for ent in rec.entity_objects %}
+                    <a href="{{ ent.generate_absolute_url }}" class="btn btn-primary btn-sm" style="margin: 7px;">{{ ent.text }}</a>
+                  {% endfor %}
+                  </td>
+
+                </tr>
+                </table>
+              </td>
+              </tr>
+              {% endfor %}
+            </table>
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $('.no-collapsable').on('click', function (e) {
+    e.stopPropagation();
+});
+</script>
+
+{% endblock %}
