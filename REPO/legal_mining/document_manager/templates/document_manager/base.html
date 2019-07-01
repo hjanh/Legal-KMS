@@ -54,39 +54,15 @@
                                 <div>
                                     <strong>Notification</strong>
                                     <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
+                                        <em>{{ notify.date }}</em>
                                     </span>
                                 </div>
-                                <div>We recommend you to read 3 new documents that my be of interest to you ... </div>
+                                <div>{{ notify.text }}</div>
                             </a>
                         </li>
-                        <li class="divider"></li>
+                      
                         <li>
-                            <a href="#">
-                                <div>
-                                    <strong>Notification</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>03.02.2018</em>
-                                    </span>
-                                </div>
-                                <div>We recommend you to read 1 new documents that my be of interest to you ... </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                	<li>
-                            <a href="#">
-                                <div>
-                                    <strong>Notification</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>01.02.2018</em>
-                                    </span>
-                                </div>
-                                <div>We recommend you to read 14 new documents that my be of interest to you ... </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
+                            <a class="text-center" href="{% url "notify_show_all" %}">
                                 <strong>Read All Messages</strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
@@ -125,7 +101,7 @@
                         <li class="sidebar-search">
 
 			<div><i class="fa fa-user fa-fw"></i>Activ-User: {{ user.username }}</div>
-                        <div><i class="fa fa-lock fa-fw"></i>Permissions: Administration</div>  
+                        <div><i class="fa fa-lock fa-fw"></i>Permissions: {{ user.permission }}</div>  
                         </li>
                         <li>
                             <a href="../"><i class="fa fa-search fa-fw"></i> Document Search</a>
