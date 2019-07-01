@@ -38,3 +38,78 @@ Technical Background:
 
 ### Recommendations
 ![search interface](http://murtaugh.de/img_tmp/5.png)
+
+
+## User Interface Installation on Ubuntu
+
+- Install Xampp or other Mysql Server (e.g, http://sourceforge.net/projects/xampp/files/XAMPP%20Linux/)
+
+- Increase memeory limit of PHP execution to 256mb
+```
+gedit /opt/lampp/etc/php.ini
+```
+
+- Import taxmining.sql dump (Currently, due to the licensing of some sources, the database was previously completely emptied)
+
+- Install Neo4j
+
+```
+wget --no-check-certificate -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+echo 'deb http://debian.neo4j.org/repo stable/' | sudo tee /etc/apt/sources.list.d/neo4j.list
+sudo apt update
+sudo apt install neo4j
+
+```
+
+- Due to database version it is neccessary to enable mitgrations
+
+```
+sudo chown -R neo4j:neo4j /var/lib/neo4j/data/databases/graph.db/
+sudo gedit /etc/neo4j/neo4j.conf
+dbms.allow_upgrade=true
+
+```
+
+- Install Python3 and Pip3
+
+- Install Django and force Version 1.11.11
+
+- Install other dependencies
+
+```
+pip3 install django_neomodel
+pip3 install django_haystack
+pip3 install whoosh
+pip3 install vote
+pip3 install django-vote
+pip3 install django-bootstrap3
+sudo apt-get install python-mysqldb
+sudo apt-get install libmysqlclient-dev
+pip3 install mysqlclient
+
+```
+- Modify SQL connection string in legal_mining/settings.py
+
+- Modify Neo4j connection settings
+
+```
+
+NEOMODEL_NEO4J_BOLT_URL = os.environ.get('NEO4J_BOLT_URL', 'bolt://neo4j:12345@localhost:7687')
+config.DATABASE_URL = 'bolt://neo4j:12345@localhost:7687'
+```
+
+- Modify doument_manager/models.py 
+
+```
+user_id = models.ForeignKey(User, on_delete=models.PROTECT)
+document_id = models.ForeignKey(Documentstorage, on_delete=models.PROTECT)
+```
+
+- Run Django
+
+```
+python3 manage.py runserver (Or python3 manage.py runserver 0.0.0.0:8000 for lan access)
+login=user2
+password=user2user2
+```
+  
